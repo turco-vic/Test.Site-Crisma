@@ -182,7 +182,7 @@ export function StudentDashboard({ user, onLogout }) {
                             
                             <div>
                                 <div className="flex justify-between text-sm">
-                                    <span className="text-gray-600">Aulas Assistidas</span>
+                                    <span className="text-gray-600">Encontros Assistidos</span>
                                     <span className="font-medium text-gray-900">{attendanceData.filter(a => a.status === 'present').length}/{attendanceData.length}</span>
                                 </div>
                                 <div className="mt-1 bg-gray-200 rounded-full h-2">
@@ -202,7 +202,7 @@ export function StudentDashboard({ user, onLogout }) {
                 <div className="flex items-center">
                     <Book className="h-6 w-6 text-blue-600 mr-3" />
                     <div>
-                        <h3 className="text-lg font-medium text-blue-900">Próxima Aula</h3>
+                        <h3 className="text-lg font-medium text-blue-900">Próximo Encontro</h3>
                         <p className="text-blue-700">{classInfo.nextTopic}</p>
                         <p className="text-sm text-blue-600">{classInfo.nextClass} - {classInfo.schedule}</p>
                     </div>
